@@ -1,0 +1,39 @@
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+}
+
+.nav-item {
+  margin-bottom: 5px;
+}
+
+.navbar {
+  margin: 40px 10px 0 10px;
+}
+
+.navbar-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.navbar-close {
+  border: none;
+  background: none;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  padding: 35px;
+  margin-top: 150px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: 3px white underline;
+  color: white;
+}
