@@ -45,6 +45,7 @@ footer {
   margin: 0;
 }
 
+
                           /************** HEADER AND NAV **************/
 
 .header-container {
@@ -55,6 +56,7 @@ footer {
   margin: 0;
   height: 800px;
   width: 100%;
+  box-sizing: inherit;
 }
 
 .navbar {
@@ -89,6 +91,20 @@ footer {
   margin: -50px 10px 10px;
   color: white;
   top: 40vh;
+}
+@media screen and (max-width: 440px) {
+
+  h1 {
+    font-size: 40px;
+  }
+  .heading-text {
+    position: absolute;
+    border: 3px solid white;
+    padding: 15px;
+    margin: -50px 20px 10px 0;
+    color: white;
+    top: 40vh;
+  }
 }
 
 .sub-heading-img-mobile {
