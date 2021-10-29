@@ -10,7 +10,7 @@ h1 {
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 a {
@@ -23,7 +23,7 @@ a:hover{
   color: white;
 }
 
-p {
+p, .panel-text {
   color: hsl(0, 0%, 55%);
   line-height: 2;
 }
@@ -57,6 +57,19 @@ footer {
   height: 800px;
   width: 100%;
   box-sizing: inherit;
+  display: block;
+}
+
+.dark-overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #1B1C1D;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  mix-blend-mode: multiply;
 }
 
 .navbar {
@@ -69,14 +82,14 @@ footer {
 }
 
 .nav-link{
-  color: white;
+  color: hsla(0, 0%, 100%, 0.75);
   margin-right: 30px;
   text-decoration: none;
   padding: 0 0 3px 0;
 }
 
 .nav-link:hover {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .navbar-icon {
@@ -86,11 +99,13 @@ footer {
 
 .heading-text {
   position: absolute;
-  border: 3px solid white;
-  padding: 30px;
+  color: hsl(0, 0%, 100%);
+  padding: 30px 20px 20px 40px;
   margin: -50px 10px 10px;
-  color: white;
-  top: 40vh;
+  border-style: solid;
+  border-width: 3px;
+  border-color: hsla(0, 0%, 100%, 0.75);
+  top: 45vh;
 }
 @media screen and (max-width: 440px) {
 
@@ -99,7 +114,6 @@ footer {
   }
   .heading-text {
     position: absolute;
-    border: 3px solid white;
     padding: 15px;
     margin: -50px 20px 10px 0;
     color: white;
@@ -137,42 +151,34 @@ footer {
 
 .list-img1 {
   background-image: url("../images/mobile/image-deep-earth.jpg");
-  display: block;
 }
 
 .list-img2 {
   background-image: url("../images/mobile/image-night-arcade.jpg");
-  display: block;
 }
 
 .list-img3 {
   background-image: url("../images/mobile/image-soccer-team.jpg");
-  display: block;
 }
 
 .list-img4 {
   background-image: url("../images/mobile/image-grid.jpg");
-  display: block;
 }
 
 .list-img5 {
   background-image: url("../images/mobile/image-from-above.jpg");
-  display: block;
 }
 
 .list-img6 {
   background-image: url("../images/mobile/image-pocket-borealis.jpg");
-  display: block;
 }
 
 .list-img7 {
   background-image: url("../images/mobile/image-curiosity.jpg");
-  display: block;
 }
 
 .list-img8 {
   background-image: url("../images/mobile/image-fisheye.jpg");
-  display: block;
 }
 
 .panel-heading {
@@ -183,12 +189,12 @@ footer {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 200px;
+  width: 100%;
   margin-bottom: 50px;
   position: relative;
   flex: 0.5;
-  box-shadow: inset 0 0 200px black;
+  box-shadow: inset 0 -50px 100px #1B1C1D;
 }
 
 .panel:hover {
@@ -201,14 +207,19 @@ footer {
   opacity: 1;
 }
 
-.panel p{
+.panel-text{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 35px;
-  color: white;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.75);
   position: absolute;
   bottom: 0;
   padding: 0 0 0 10px;
   line-height: 1;
+  display: block;
+  margin-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 50%;
 }
 
 .button {
@@ -276,21 +287,23 @@ footer {
   }
 
   .navbar{
-    padding-right: 100px;
-  }
-
-  .mobile-menu-form {
-
+    margin-right: 50px;
   }
 
   .header-container {
     background-image: url("../images/desktop/image-hero.jpg");
+    height: 650px;
+  }
+
+  .main-logo{
+    margin-left: 120px;
   }
 
   .heading-text {
-    font-size: 80px;
-    max-width: 750px;
-    top: 45vh;
+    font-size: 65px;
+    max-width: 645px;
+    top: 37vh;
+    margin-left: 145px;
   }
 
 
@@ -311,7 +324,7 @@ footer {
   .middle-section{
     margin-bottom: 150px;
     position: relative;
-    padding: 0 100px 0 120px;
+    padding: 0 150px 0 170px;
   }
 
   .sub-heading-container {
@@ -335,7 +348,7 @@ footer {
 
   .bottom-section {
     text-align: left;
-    padding: 0 150px 0 130px;
+    padding: 0 150px 0 180px;
   }
 
   .list-img1 {
@@ -375,8 +388,16 @@ footer {
   }
 
   .panel {
-    height: 400px;
+    height: 500px;
     margin: 0;
+    background-position: center;
+  }
+
+  .panel-text{
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 30%;
   }
 
   .panel-heading {
@@ -415,10 +436,14 @@ footer {
 
   .footer {
     text-align: left;
-    padding: 0 150px 50px 140px;
+    padding: 0 150px 50px 190px;
     position: relative;
   }
 
+  .footer-logo{
+    height: 25px;
+    width: auto;
+  }
   .footer-item{
     padding: 0 35px 0 0;
     width: auto;
