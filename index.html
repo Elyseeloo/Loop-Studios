@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html role="main" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -28,18 +28,16 @@
 
 
     <!-- Header Image -->
-  <header>
-    <div class="header-container row">
-      <div>
-        <span role="img" aria-label="woman playing a video game wearing a vr headset"></span>
-      </div>
-      <div class="col">
 
+  <div class="header-container row">
+    <span role="img" aria-labelledby="woman wearing vr headphones"></span>
+    <header>
+      <div class="col">
 
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <img src="images/logo.svg" alt="Loopstudios logo" />
+            <img role="logo" src="images/logo.svg" alt="Loopstudios logo" />
             <form method="get" action="mobile-menu.html" class="mobile-menu-form">
               <button class="navbar-hamburger" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img alt="navbar logo" class="navbar-icon" src="images/icon-hamburger.svg" />
@@ -83,12 +81,12 @@
 
   <!-- Introduction -->
 
-  <article class="middle-section">
+  <section role="region" class="middle-section">
     <div class="row">
       <div class="col">
-        <img src="images/mobile/image-interactive.jpg" alt="man wearing vr headset" class="sub-heading-img-mobile" />
-        <img src="images/desktop/image-interactive.jpg" alt="man wearing vr headset" class="sub-heading-img-desktop" />
-        <div class="sub-heading-container">
+        <img role="img" src="images/mobile/image-interactive.jpg" alt="man wearing vr headset" class="sub-heading-img-mobile" />
+        <img role="img" src="images/desktop/image-interactive.jpg" alt="man wearing vr headset" class="sub-heading-img-desktop" />
+        <article class="sub-heading-container">
           <h2>THE LEADER IN INTERACTIVE VR</h2>
           <p>
             Founded in 2011, Loopstudios has been producing world-class virtual reality
@@ -96,16 +94,16 @@
             creations have transformed businesses through digital experiences that bind
             to their brand.
           </p>
-        </div>
+        </article>
       </div>
     </div>
-  </article>
+  </section>
 
 
 
 
   <!-- Products -->
-  <section class="bottom-section">
+  <section role="region" class="bottom-section">
     <div class="row panel-container">
       <div class="panel-heading order-lg-1" id="creations">
         <h2>OUR CREATIONS</h2>
@@ -175,11 +173,7 @@
         <button type="button" class="button">SEE ALL
         </button>
       </div>
-
     </div>
-
-
-
   </section>
 
 
