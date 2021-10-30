@@ -302,7 +302,7 @@ footer {
   .heading-text {
     font-size: 65px;
     max-width: 650px;
-    top: 24vh;
+    top: 37vh;
     margin-left: 145px;
   }
 
@@ -477,7 +477,7 @@ footer {
   .attribution {
     width: auto;
     position: absolute;
-    right: 165px;
+    right: 155px;
     bottom: 20px;
     font-size: 11px;
   }
