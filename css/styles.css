@@ -24,7 +24,7 @@ a:hover{
 }
 
 p, .panel-text {
-  color: hsl(0, 0%, 55%);
+  color: hsl(0, 0%, 75%);
   line-height: 2;
 }
 
@@ -73,7 +73,7 @@ footer {
 }
 
 .navbar {
-  margin: 40px 10px 0 10px;
+  margin: 40px 20px 0 10px;
 }
 
 .navbar-hamburger {
@@ -82,7 +82,7 @@ footer {
 }
 
 .nav-link{
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 100%);
   margin-right: 30px;
   text-decoration: none;
   padding: 0 0 3px 0;
@@ -301,8 +301,8 @@ footer {
 
   .heading-text {
     font-size: 65px;
-    max-width: 645px;
-    top: 37vh;
+    max-width: 650px;
+    top: 24vh;
     margin-left: 145px;
   }
 
@@ -436,26 +436,28 @@ footer {
 
   .footer {
     text-align: left;
-    padding: 0 150px 50px 190px;
+    padding: 0 150px 20px 190px;
     position: relative;
   }
 
-  .footer-logo{
+  .footer-logo {
     height: 25px;
     width: auto;
   }
-  .footer-item{
-    padding: 0 35px 0 0;
+
+  .footer-item {
+    padding: 0 20px 0 0;
     width: auto;
   }
 
   .footer-links {
     padding: 15px 0 30px 0;
     width: auto;
+
   }
 
   .icons {
-    width:auto;
+    width: auto;
     position: absolute;
     right: 165px;
     top: 64px;
@@ -465,11 +467,12 @@ footer {
     padding-bottom: 12px;
   }
 
-  .copyright {
+  .copyright p{
     width: auto;
     position: absolute;
-    top: 123px;
+    top: 118px;
     right: 165px;
+    color: hsl(0, 0%, 41%);
 }
   .attribution {
     width: auto;
@@ -477,6 +480,5 @@ footer {
     right: 165px;
     bottom: 20px;
     font-size: 11px;
-    text-align: center;
   }
 }
